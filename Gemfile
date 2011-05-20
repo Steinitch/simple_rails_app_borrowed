@@ -8,10 +8,10 @@ gem 'sqlite3'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 group :development do
-	gem 'rspec-rails'
+	gem 'rspec-rails', "~> 2.4"
 end
 
 group :test do
-	gem 'rspec-rails'
+	gem 'rspec-rails', "~> 2.4"
 end
 
