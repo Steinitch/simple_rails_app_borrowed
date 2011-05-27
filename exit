@@ -1,0 +1,65 @@
+[33mcommit 0f1d686e100ea4b5963bad33fa12d5b3c23a0475[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Thu May 26 00:24:26 2011 +0700
+
+    Added layout links with routes
+
+[33mcommit fedfe1a358194b5fef4e01e343a7e4aed0bd8e42[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Wed May 25 22:45:25 2011 +0700
+
+    Added some partials including the footer
+
+[33mcommit 9afb86e6820610f78be160c5bf87d523caf5afc9[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Wed May 25 22:28:55 2011 +0700
+
+    Added a custom css
+
+[33mcommit 6f5e80de449e1e3297816ddd45e2e459bbf50270[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Wed May 25 21:50:16 2011 +0700
+
+    Added a logo image
+
+[33mcommit 85d889c014eb380256de08b4b7811aba3b85b2f4[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Wed May 25 21:29:31 2011 +0700
+
+    Completed the layout structure
+
+[33mcommit 67e635b61becc088156f48cc8026fc3a6eb49242[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Wed May 25 20:47:27 2011 +0700
+
+    Added a title and css
+
+[33mcommit a95e0c1a480cb2bacb1e1230105ec74e2466c816[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Fri May 20 19:55:31 2011 +0700
+
+    Added a title helper
+
+[33mcommit 9c6c95d0ecafb1eb0bce8446b61b4d28acd50cbb[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Fri May 20 16:07:48 2011 +0700
+
+    Added a site layout
+
+[33mcommit a29b4abfcc3b27d65f87cdcc2dc41716e58b267e[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Thu May 19 22:48:50 2011 +0700
+
+    Added a pages controller
+
+[33mcommit c16527c73d7555994de56b0b4e664c2e63661c77[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Thu May 19 22:21:13 2011 +0700
+
+    Improved the README
+
+[33mcommit 3db47adedc39f1ea1f012e3ca2e54b0624ba399d[m
+Author: Mihause <mihause@ngs.ru>
+Date:   Thu May 19 22:13:32 2011 +0700
+
+    Initial commit
