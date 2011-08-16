@@ -9,6 +9,7 @@ gem 'sqlite3'
 # and rake tasks are available in development mode:
 group :development do
 	gem 'rspec-rails', "~> 2.4"
+	gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 end
 
 group :test do
