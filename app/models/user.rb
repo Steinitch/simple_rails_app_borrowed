@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 
-  attr_accessor   :passowrd
-  attr_accessible :name, :email, :passowrd, :passowrd_confirmation
+  attr_accessor   :password
+  attr_accessible :name, :email, :password, :passowrd_confirmation
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -12,9 +12,42 @@ class User < ActiveRecord::Base
                      :format     => { :with => email_regex },
                      :uniqueness => { :case_sensitive => false }
 
-  validates :passowrd, :presence => true,
+  validates :password, :presence => true,
                        :confirmation => true,
                        :length => { :within => 6..40 }
+
+  before_save :encrypt_password
+
+  def has_password?(submitted_password)
+    encrypted_password == encrypt(submitted_password)
+  end
+
+  class << self
+    def authenticate(email, submitted_password)
+      user = find_by_email(email)
+      return nil if user.nil?
+      return user if user.has_password?(submitted_password)
+    end
+  end
+
+  private
+
+    def encrypt_password
+      self.salt = make_salt if new_record?
+      self.encrypted_password = encrypt(password)
+    end
+
+    def encrypt(str)
+      secure_hash("#{salt}--#{str}")
+    end
+
+    def make_salt
+      secure_hash("#{Time.now.utc}--#{password}")
+    end
+
+    def secure_hash(str)
+      Digest::SHA2.hexdigest(str)
+    end
 end
 # == Schema Information
 #
