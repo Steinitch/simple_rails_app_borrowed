@@ -30,7 +30,7 @@ class User < ActiveRecord::Base
       (user && user.has_password?(submitted_password)) ? user : nil
     end
 
-    def authenticate_with_salt(id, coolie_salt)
+    def authenticate_with_salt(id, cookie_salt)
       user = find_by_id(id)
       (user && user.salt == cookie_salt) ? user : nil
     end
