@@ -2,8 +2,7 @@
 
 <%= form_for(@user) do |f| %>
 
-  <%= render 'fields', :object => f.object %>
-
+  <%= render 'fields', :f => f %>
   <div class="actions">
     <%= f.submit "Update" %>
   </div>
